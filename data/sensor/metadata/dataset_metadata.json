@@ -1,0 +1,23 @@
+{
+  "mode": "quick",
+  "signal_config": {
+    "sampling_rate": 1000,
+    "duration_seconds": 4.0,
+    "base_frequency_hz": 30.0,
+    "amplitude": 1.0,
+    "noise_level": 0.05,
+    "random_seed": 42
+  },
+  "window_size": 256,
+  "overlap_fraction": 0.5,
+  "split_window_counts": {
+    "train": 4080,
+    "validation": 960,
+    "test": 960
+  },
+  "source_counts": {
+    "train": 136,
+    "validation": 32,
+    "test": 32
+  }
+}

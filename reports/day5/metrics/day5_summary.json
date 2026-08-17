@@ -1,0 +1,6 @@
+{
+  "best_classical": "logistic_regression",
+  "best_classical_f1": 0.9164700532958839,
+  "cnn_f1": 0.8816590977288071,
+  "recommendation": "The best classical model is competitive and may be simpler for tiny devices. However, the feature extraction cost (FFT + statistics) must be included in the deployment budget."
+}
