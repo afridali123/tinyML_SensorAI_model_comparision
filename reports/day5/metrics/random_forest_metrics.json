@@ -31,13 +31,13 @@
     ]
   ],
   "classification_report": "              precision    recall  f1-score   support\n\n           0     0.7953    0.7125    0.7516       240\n           1     0.9562    1.0000    0.9776       240\n           2     0.7283    0.7708    0.7490       240\n           3     1.0000    1.0000    1.0000       240\n\n    accuracy                         0.8708       960\n   macro avg     0.8700    0.8708    0.8696       960\nweighted avg     0.8700    0.8708    0.8696       960\n",
-  "train_time_ms": 246.40179999914835,
+  "train_time_ms": 252.06619999880786,
   "latency_ms": {
-    "mean_ms": 22.780732666578842,
-    "median_ms": 20.267599998987862,
-    "min_ms": 17.878099999506958,
-    "max_ms": 39.21020000052522,
-    "p95_ms": 34.56949999963399,
+    "mean_ms": 20.32668466672476,
+    "median_ms": 19.49994999813498,
+    "min_ms": 17.59909999964293,
+    "max_ms": 38.81869999895571,
+    "p95_ms": 26.25110000008135,
     "runs": 150.0
   },
   "model_path": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\day 5 sensor\\models\\classical\\sensor_random_forest.joblib",
