@@ -1,0 +1,34 @@
+{
+  "model_path": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\day 5 sensor\\models\\classical\\sensor_logistic_regression.joblib",
+  "features_csv": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\day 5 sensor\\data\\sensor\\processed\\sensor_features.csv",
+  "output_header": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\day 5 sensor\\stm32 package\\generated\\sensor_model_data.h",
+  "feature_columns": [
+    "mean",
+    "std",
+    "variance",
+    "rms",
+    "maximum",
+    "minimum",
+    "peak_to_peak",
+    "median",
+    "absolute_mean",
+    "skewness",
+    "kurtosis",
+    "crest_factor",
+    "signal_energy",
+    "dominant_frequency",
+    "dominant_magnitude",
+    "spectral_centroid",
+    "spectral_energy",
+    "spectral_entropy",
+    "low_band_energy",
+    "mid_band_energy",
+    "high_band_energy"
+  ],
+  "class_names": [
+    "normal",
+    "imbalance",
+    "impulse_fault",
+    "high_frequency_disturbance"
+  ]
+}
