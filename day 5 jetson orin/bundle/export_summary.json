@@ -1,0 +1,78 @@
+{
+  "models": [
+    {
+      "model_name": "fashion_mnist_cnn",
+      "source_model": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\models\\keras\\notebook09_fashion_mnist_cnn.keras",
+      "task": "multiclass_classification",
+      "input_name": "input",
+      "output_name": "output",
+      "input_shape": [
+        1,
+        28,
+        28,
+        1
+      ],
+      "input_dtype": "float32",
+      "layout": "NHWC",
+      "normalization": {
+        "scale": 0.00392156862745098,
+        "offset": 0.0,
+        "note": "Image inputs should be converted to float32 0..1 before inference."
+      },
+      "class_names": [
+        "T-shirt",
+        "Trouser",
+        "Pullover",
+        "Dress",
+        "Coat",
+        "Sandal",
+        "Shirt",
+        "Sneaker",
+        "Bag",
+        "Ankle boot"
+      ],
+      "onnx_opset": 13,
+      "prediction_threshold": null,
+      "output_activation": "softmax",
+      "sample_path": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\day 5 jetson orin\\bundle\\fashion_mnist_sample.npy",
+      "onnx_parity": {
+        "max_abs_error": 1.7881393432617188e-07,
+        "mean_abs_error": 3.701497774954987e-08,
+        "class_match": true
+      }
+    },
+    {
+      "model_name": "cats_dogs_transfer",
+      "source_model": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\models\\keras\\notebook10_cats_dogs_transfer.keras",
+      "task": "binary_classification",
+      "input_name": "input",
+      "output_name": "output",
+      "input_shape": [
+        1,
+        96,
+        96,
+        3
+      ],
+      "input_dtype": "float32",
+      "layout": "NHWC",
+      "normalization": {
+        "scale": 0.00392156862745098,
+        "offset": 0.0,
+        "note": "Image inputs should be converted to float32 0..1 before inference."
+      },
+      "class_names": [
+        "cats",
+        "dogs"
+      ],
+      "onnx_opset": 13,
+      "prediction_threshold": 0.5,
+      "output_activation": "sigmoid",
+      "sample_path": "C:\\Users\\thenebandaa\\OneDrive - West Pharmaceutical Services, Inc\\trainings\\Edge AI\\code\\data\\processed\\notebook10_cats_dogs_sample.npy",
+      "onnx_parity": {
+        "max_abs_error": 0.0,
+        "mean_abs_error": 0.0,
+        "class_match": true
+      }
+    }
+  ]
+}
