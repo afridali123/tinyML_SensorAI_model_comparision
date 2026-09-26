@@ -42,7 +42,8 @@ if [[ -z "${TRTEXEC_PATH}" ]]; then
   exit 4
 fi
 
-if "${TRTEXEC_PATH}" --help 2>&1 | grep -q -- "--memPoolSize"; then
+TRTEXEC_HELP="$("${TRTEXEC_PATH}" --help 2>&1 || true)"
+if grep -q -- "--memPoolSize" <<< "${TRTEXEC_HELP}"; then
   WORKSPACE_OPTION="--memPoolSize=workspace:${WORKSPACE}"
 else
   WORKSPACE_OPTION="--workspace=${WORKSPACE}"
