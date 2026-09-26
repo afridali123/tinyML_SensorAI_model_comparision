@@ -42,6 +42,12 @@ if [[ -z "${TRTEXEC_PATH}" ]]; then
   exit 4
 fi
 
+if "${TRTEXEC_PATH}" --help 2>&1 | grep -q -- "--memPoolSize"; then
+  WORKSPACE_OPTION="--memPoolSize=workspace:${WORKSPACE}"
+else
+  WORKSPACE_OPTION="--workspace=${WORKSPACE}"
+fi
+
 mkdir -p "${ENGINE_DIR}"
 
 build_engine() {
@@ -55,7 +61,7 @@ build_engine() {
     exit 3
   fi
 
-  local cmd=("${TRTEXEC_PATH}" "--onnx=${onnx_path}" "--saveEngine=${engine_path}" "--workspace=${WORKSPACE}" "--shapes=input:${shape}")
+  local cmd=("${TRTEXEC_PATH}" "--onnx=${onnx_path}" "--saveEngine=${engine_path}" "${WORKSPACE_OPTION}" "--shapes=input:${shape}")
   if [[ "${PRECISION}" == "fp16" ]]; then
     cmd+=("--fp16")
   fi

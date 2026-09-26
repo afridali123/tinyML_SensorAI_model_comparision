@@ -87,6 +87,12 @@ chmod +x jetson/build_tensorrt_engines.sh
 ./jetson/build_tensorrt_engines.sh --precision fp16
 ```
 
+Or build the same engines with the TensorRT Python API:
+
+```bash
+python3 jetson/build_tensorrt_engines.py --precision fp16
+```
+
 This creates:
 
 ```text
